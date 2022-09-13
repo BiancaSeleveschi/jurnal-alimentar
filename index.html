@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Jurnal alimentar</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Acasa</a>
+          <a href=“product-list-div”>Lista de produse</a>
+          <a href="add-product-div">Adauga produs</a>
+          <a href="#">Produsul favorit</a>
+          <a onclick="storeFavoriteProducts()" href="favorite-products.html">Cele mai cautate produse</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="https://tkfoodsbd.com/wp-content/uploads/2022/06/Happy-Time-product-Mockups-min-1-1.png" width="400">
+    <h2>Adauga produs nou</h2>
+    <div id="add-product-div">
+      <input type="text" id="title-input" placeholder="titlul produsului">
+      <input type="text" id="category-input" placeholder="categoria produsului">
+      <input type="number" id="calories-input" placeholder="numarul de calorii ">
+      <input type="number" id="price-input" placeholder="pretul produsului ">
+    </div>
+    <button id="create-button">Salveaza produsul</button>
+
+    <h3>Filtreaza:</h3>
+    <input type="text" id="category-filter-input" placeholder="categoria produsului">
+    <input type="text" id="title-filter-input" placeholder="numele produsului">
+    <input class="price-filter-input-div" type="text" id="min-price-filter-input" placeholder="pretul minim">
+    <input class="price-filter-input-div" type="text" id="max-price-filter-input" placeholder="pretul maxim">
+    <input class="calories-filter-input-div" type="text" id="min-calories-filter-input"
+      placeholder=" numarul minim de calorii">
+    <input class="calories-filter-input-div" type="text" id="max-calories-filter-input"
+      placeholder=" numarul maxim de calorii">
+    <button id="filter-button">Afiseaza produsele</button>
+
+    <h3>Sorteaza dupa: </h3>
+    <div class="sort-button-div">
+      <button class="sort-button-div" id="category-sort-button">Categorie</button>
+      <button class="sort-button-div" id="price-sort-button">Pret</button>
+      <button class="sort-button-div" id="calories-sort-button">Calorii</button>
+    </div>
+
+    <div id="product-list-div">
+      <table>
+        <thead>
+          <tr>
+            <td>Title </td>
+            <td>Category </td>
+            <td>Calories </td>
+            <td>Price </td>
+            <td>Delete</td>
+            <td>Favorite</td>
+          </tr>
+        </thead>
+        <tbody id="products-tbody"> </tbody>
+      </table>
+    </div>
+
+    <h3>Ai cheltuit urmatoarea suma pe produse: </h3>
+    <span id="total-price-span"></span>
+    <span>RON</span>
+    <h3>Calorii consumate: </h3>
+    <span id="total-calories-span"></span>
+    <span>kcal</span>
+    <h3>Produsele favorite sunt: </h3>
+    <span id="favorite-products-span"></span>
+    <h3>Categoriile sunt: </h3>
+    <span id="all-categories-span"></span>
+    <h3>Prudusul cu pretul minim este: </h3>
+    <span id="name-min-price-span"></span>
+    <h3>Categoria cea mai intalnita este: </h3>
+    <span id="most-used-category-span"></span>
+  </main>
+
+  <footer>
+    <h3>Acest website a fost creat de Bianca</h3>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

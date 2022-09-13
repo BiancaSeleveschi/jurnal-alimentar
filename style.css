@@ -1,0 +1,119 @@
+ html, body {
+  background: #7e1aa2;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+main {
+  max-width:500px;
+ margin: auto;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+nav {
+  background: #570462;
+  text-align: center;
+  padding: 8px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+footer {
+  border-top: solid 4px #6f6fd3;
+  margin-top:70px;
+}
+
+tr {
+  background: #8181d5;
+}
+
+thead {
+  font-weight: bold;
+}
+
+td {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+table {
+  width:100% ;
+  margin-top:20px;
+}
+
+input {
+  border-radius: 6px;
+  padding: 8px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  font-size:14px;
+}
+
+button {
+  padding: 10px;
+  color: white;
+  background: #5a5aaa;
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size:15px;
+  cursor: pointer;
+  margin:auto;
+  display: block;
+}
+
+.sort-button-div {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.favorite-button {
+  border: solid 4px orange;
+}
+
+.notfavorite-button {
+   background: orange;
+}
+
+.price-filter-input-div {
+  font-size:14px;
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+.calories-filter-input-div {
+  font-size:14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+span {
+  background: #5a075a;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
