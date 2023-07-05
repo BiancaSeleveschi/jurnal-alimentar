@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href="index.html">Acasa</a>
+            <a id="product-list" href="#product-list">Lista de produse</a>
+            <a id='add-product' href="#add-product-div">Adauga produs</a>
+            <a href="favorite-products.html">Produsul favorit</a>
+            <a onclick="storeFavoriteProducts()" id="most-wanted-products" href="most-wanted-products.html">Cele mai cautate produse</a>
+        </li>
+    </ul>
+</nav>
+<h1>Adauga produs nou</h1>
+<div id="add-product-div">
+<!--    TODO: pune required sa merga pe inouturi si sa se coloreze cu rosu daca a lasat gol inputul
+IN JS, daca se apasa pe butonul de adauga, afiseaza alertul de eroare pentru ca sunt inputuri goale,
+sau fa disable (ca stilizar css) la buton din js pana cand sunt populate toate inputurile de catre user-->
+    <input type="text" id="title-input" required="true" placeholder="Nume">
+    <input type="text" id="category-input" required placeholder="Categoria">
+    <input type="number" id="calories-input" required placeholder="Numarul de calorii ">
+    <input type="number" id="price-input" required placeholder="Pret">
+</div>
+<button id="create-button" >Adauga</button>
+<script src="new-product.js"></script>
+<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

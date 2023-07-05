@@ -1,119 +1,168 @@
- html, body {
-  background: #7e1aa2;
-  height: 100%;
-  width: 100%;
-  color: white;
-  text-align: center;
+html, body {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background: url("https://static.vecteezy.com/system/resources/previews/004/773/851/non_2x/stylish-templates-with-organic-abstract-shapes-and-line-in-nude-colors-pastel-background-in-minimalist-style-contemporary-illustration-free-vector.jpg") ;
+    background-size: cover;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 main {
-  max-width:500px;
- margin: auto;
+    max-width: 500px;
+    margin: auto;
 }
 
 h1, h2, h3 {
-  text-align: center;
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 h3 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 nav {
-  background: #570462;
-  text-align: center;
-  padding: 8px;
-  margin: 5px;
-  font-size: 14px;
+    margin-top: -0.6em;
+    background: #4a6500;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
 nav ul li a {
-  color: white;
-  font-weight: bold;
-  padding: 8px;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
 }
 
 nav ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
-footer {
-  border-top: solid 4px #6f6fd3;
-  margin-top:70px;
-}
-
-tr {
-  background: #8181d5;
-}
-
-thead {
-  font-weight: bold;
-}
-
-td {
-  font-size: 18px;
-  color: white;
-  text-align: center;
-  font-weight: 600;
-}
-
-table {
-  width:100% ;
-  margin-top:20px;
-}
 
 input {
-  border-radius: 6px;
-  padding: 8px;
-  display: block;
-  margin: auto;
-  margin-bottom: 10px;
-  font-size:14px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 8px;
+    display: block;
+    margin: auto auto 10px;
+    font-size: 14px;
 }
 
-button {
-  padding: 10px;
-  color: white;
-  background: #5a5aaa;
-  border: none;
-  border-radius: 7px;
-  font-weight: 500;
-  font-size:15px;
-  cursor: pointer;
-  margin:auto;
-  display: block;
-}
-
-.sort-button-div {
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.favorite-button {
-  border: solid 4px orange;
-}
-
-.notfavorite-button {
-   background: orange;
+#filter-title {
+    margin-top: 40px;
 }
 
 .price-filter-input-div {
-  font-size:14px;
-  display: inline-block;
-  vertical-align: middle;
-  
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+
 }
 
 .calories-filter-input-div {
-  font-size:14px;
-  display: inline-block;
-  vertical-align: middle;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
+button {
+    padding: 10px;
+    color: white;
+    background: #4a6500;
+    border: none;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+
+button:hover {
+    background: #668f00;
+}
+
+#filter-button {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.sort-button-div {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+tr {
+    background: #fa906d;
+}
+
+thead {
+    font-weight: bold;
+}
+
+td {
+    font-size: 18px;
+    padding: 2px;
+    text-align: center;
+    font-weight: 900;
+}
+
+table {
+    width: 110%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.delete-button {
+    background: #ce1414;
+}
+
+.delete-button:hover {
+    background: #a60606;
+}
+
+.favorite-button {
+    border: solid 4px #ab4521;
+}
+
+.notfavorite-button {
+    background: #ffcc00;
+    color: black;
+}
+
+.notfavorite-button:hover {
+    background: #eec009;
+    color: white;
+}
+
+
 span {
-  background: #5a075a;
-  padding: 5px;
-  border-radius: 5px;
+    background: #3b4f16;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 70px;
+    padding: 2px;
+}
+
+#create-button {
+    background-color: #175dff;
+    margin-top: 15px;
 }
 
 
