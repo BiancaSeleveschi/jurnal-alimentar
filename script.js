@@ -1,4 +1,4 @@
-let products =   [{
+export let products = [{
     title: 'Mozzarella',
     calories: 212,
     price: 7,
@@ -72,14 +72,12 @@ let products =   [{
     isFavorite: false,
 }]
 
-// products = localStorage.getItem("products") ? localStorage.getItem("products") : products
-// localStorage.setItem("products", JSON.stringify(products))
-if(localStorage.getItem("products")){
-    products = JSON.parse(localStorage.getItem('products')) || [];
-}else{
-    localStorage.setItem("products", JSON.stringify(products))
-}
 
+import {addProduct} from './new-product.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    addProduct();
+})
 
 // const productsFromLS = localStorage.getItem("products")
 // console.log(productsFromLS)
@@ -190,6 +188,15 @@ function getMostUsedCategory() {
     return mostUsedCategory;
 }
 
+function deleteProduct(buttonElement, title) {
+    let trow = buttonElement.parentNode.parentNode;
+    tbody.removeChild(trow)
+    let index = products.findIndex((product) => product.title === title)
+    if (index !== -1) {
+        products.splice(index, 1);
+    }
+    localStorage.setItem('products', JSON.stringify(products));
+}
 
 function insertProduct(product) {
     let newRow = document.createElement("tr");
@@ -223,17 +230,6 @@ function insertProduct(product) {
     newRow.appendChild(favoriteTd);
 
     tbody.appendChild(newRow);
-}
-
-
-function deleteProduct(buttonElement, title) {
-    let trow = buttonElement.parentNode.parentNode;
-    tbody.removeChild(trow)
-    let index = products.findIndex((product) => product.title === title)
-    if (index !== -1) {
-        products.splice(index, 1);
-    }
-    localStorage.setItem('products', JSON.stringify(products));
 }
 
 
@@ -345,3 +341,4 @@ function getFavoriteProductsTitles() {
 
 // favoriteProductsSpan.innerHTML = getFavoriteProductsTitles();
 tbody && displayProducts()
+
